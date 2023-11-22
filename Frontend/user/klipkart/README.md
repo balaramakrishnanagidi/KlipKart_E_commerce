@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+About the project: 
+
+This is the frontend for the web application called "Klipkart", this is basicaly an e commerce application which is developed using mostly utilized and important concepts in present day industry. 
+--> JWTs are used to authenticate and maintain/track session activities.
+--> site is made resonsive using css @media queries
+--> This webapp is made to accept and process dynamic data from other admin console if needed or the data may be posted using postman.
+--> carousels, cards, jwt, interceptor, cart handling many other such features are utilised in developing this project.
