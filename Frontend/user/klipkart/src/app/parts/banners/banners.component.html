@@ -1,0 +1,13 @@
+<div class="banners">
+    <owl-carousel-o [options]="customOptions">
+
+        <ng-container *ngFor="let slide of slidesStore">
+          <ng-template carouselSlide [id]="slide.id">
+            <div class="image_wrapper">
+              <img [src]="slide.imageUrl" alt= "Img broken" >
+            </div>
+          </ng-template>
+        </ng-container>
+    
+      </owl-carousel-o>
+</div>

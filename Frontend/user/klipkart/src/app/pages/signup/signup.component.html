@@ -1,0 +1,46 @@
+<div class="parent">
+    <div class="body">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form (ngSubmit)="create_user()">
+            <h3>Signup</h3>
+
+            <div class="parent_div">
+                <div class="child_div1">
+                    <div class="sub_child">
+                        <label for="username">Username</label>
+                        <input type="text" name="name" [(ngModel)]="signupObj.name" placeholder="Name" required="true" autocomplete="off">
+                    </div>
+                    <div class="sub_child">
+                        <label for="username">Email Id</label>
+                        <input type="email" name="email" [(ngModel)]="signupObj.email" placeholder="Email"
+                            required="true" autocomplete="off">
+                    </div>
+
+                </div>
+                <div class="child_div2">
+                    <div class="sub_child">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" [(ngModel)]="signupObj.password" placeholder="Password"
+                            required="true" autocomplete="off">
+                    </div>
+
+                    <div class="sub_child">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" [(ngModel)]="signupObj.confirm_password"
+                            placeholder="Re-enter Password" required="true" autocomplete="off">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <button>Signup</button>
+            <div class="login_link">
+                <p>Already a user ? <a routerLink="/login">Login</a> here.</p>
+            </div>
+        </form>
+    </div>
+</div>

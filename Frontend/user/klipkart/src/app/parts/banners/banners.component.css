@@ -1,0 +1,17 @@
+.banners{
+    max-height: 350px;
+    max-width: 1500px;
+    margin: 20px 0 0 0;
+}
+.image_wrapper img {
+    transition: all 0.3s ease;
+    max-height: 350px;
+    max-width: 1500px;
+    border-radius: 30px; 
+  }
+  
+  .image_wrapper img:hover {
+    box-shadow: 0 0 10px 1px #d17575;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,23 @@
+<div class="parent">
+    <div class="body">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form (ngSubmit)="user_login()">
+            <h3>Login</h3>
+
+            <label for="username">Email Id</label>
+            <input type="email" name="email" [(ngModel)]="loginObj.email" placeholder="Email" required="true" autocomplete="username">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" [(ngModel)]="loginObj.password" placeholder="Password"
+                required="true" autocomplete="current-password">
+
+            <button>Log In</button>
+            <div class="login_link">
+                <p>New user ? <a routerLink="/signup">Signup</a> here.</p>
+            </div>
+        </form>
+    </div>
+</div>

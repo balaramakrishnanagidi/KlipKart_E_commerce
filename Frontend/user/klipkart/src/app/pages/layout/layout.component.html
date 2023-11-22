@@ -1,0 +1,36 @@
+<nav id="my-first" *ngIf="isToken">
+  <div class="items">
+    <div class="logotype">
+      <img src="assets/klipkart.png" />
+    </div>
+
+    <div class="lists">
+      <ul>
+        <li class="burger" (click)="toggleMenu()">
+          <i class="material-icons"> {{ isMenuOpen ? "close" : "menu" }} </i>
+        </li>
+        <li class="menu" [ngClass]="{ 'is-open': isMenuOpen }">
+          <a class="menu-item" href="#">Home</a>
+          <a class="menu-item" href="#">About</a>
+          <a class="menu-item" href="#">Contact</a>
+          <a class="menu-item" href="#">
+            <fa-icon [icon]="search"></fa-icon>
+          </a>
+          <a class="menu-item" routerLink="/cart">
+            <fa-icon [icon]="cart"></fa-icon>&nbsp;({{total_cart_items}})
+          </a>
+          <div class="menu-item user-menu" href="#" (click)="toggleDropdown()">
+            <fa-icon [icon]="user"></fa-icon>
+            <input type="checkbox" [(ngModel)]="isDropdownOpen" id="dropdownToggle" aria-hidden="true">
+            <label for="dropdownToggle" class="visually-hidden">Toggle Dropdown</label>
+            <div class="dropdown-content" [ngClass]="{ 'open': isDropdownOpen }">
+              <a href="#">Option 1</a>
+              <a href="#">Option 2</a>
+              <a type="button" (click)="logout()">Logout</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
